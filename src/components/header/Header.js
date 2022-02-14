@@ -3,9 +3,9 @@ import './header.css';
 function Header ()
 {
     return (
-        <>
-        <h1>Welcome to Best Travel Destinations!</h1>
-        </>
+        <div className="headerStyle">
+        <h1 className="welcoming">Welcome to Best Travel Destinations!</h1>
+        </div>
     );
 }
 export default Header ;
