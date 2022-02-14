@@ -4,12 +4,11 @@ body {
   
   .container {
    
-    /* position: absolute; */
+  
     height: 300px;
     width: 100%;
     top: 200px;
     
-    /* left: calc(50% - 300px); */
     display: flex;
     flex-wrap: wrap;
   }

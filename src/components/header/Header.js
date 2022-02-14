@@ -1,11 +1,12 @@
 import './header.css';
-
+import {Link} from 'react-router-dom';
 function Header ()
 {
     return (
-        <div className="headerStyle">
+        <nav className="headerStyle">
+        <Link to = '/' className='home'> Home </Link>
         <h1 className="welcoming">Welcome to Best Travel Destinations!</h1>
-        </div>
+        </nav>
     );
 }
 export default Header ;
