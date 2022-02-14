@@ -1,15 +1,15 @@
-import Header from "../header/Header";
 import Tours from "../tours/Tours";
-import Footer from "../footer/Footer";
+
 import './home.css';
 import data from "../../data/db.json";
 
+import {Routes, Route} from 'react-router-dom';
+
 function Home() {
     return (
-        <>
-            <Header />
-            <Tours data={data} />
-            <Footer />
+
+        <> 
+            <Tours data={data} />  
         </>
     )
 }

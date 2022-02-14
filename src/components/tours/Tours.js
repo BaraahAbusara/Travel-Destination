@@ -1,18 +1,17 @@
 
 import './tours.css';
+import Tour from './tour/Tour'; 
+import {Link} from 'react-router-dom';
+import TourDetails from '../tourDetails/TourDetails'; 
 
 function tours(props) {
     return (
         <div className="container">
             {
-                props.data.map(dis => {
-                    return (<div className="card">
-                        <h3 className ="title">Distination: {dis.name}</h3>
-                        <div className ="bar">
-                            <div className ="emptybar"></div>
-                            <div className="filledbar"></div>
-                        </div>
-                        <img src={dis.image} alt="Distination Image"></img>
+                props.data.map((tour,idx)=> {
+                    return (
+                    <div className="card" key={idx}>
+                        <Link to = {`/city/${tour.id}`}><Tour tour ={tour} tourKey={idx}/></Link>
                     </div>);
 
                 })
