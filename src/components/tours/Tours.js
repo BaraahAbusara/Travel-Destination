@@ -3,17 +3,21 @@ import './tours.css';
 
 function tours(props) {
     return (
-        <>
+        <div className="container">
             {
                 props.data.map(dis => {
-                   return  (<div>
-                        <h3>Distination: {dis.name}</h3>
-                        <img src= {dis.image} alt="Distination Image"></img>
-                    </div>) ;
+                    return (<div className="card">
+                        <h3 className ="title">Distination: {dis.name}</h3>
+                        <div className ="bar">
+                            <div className ="emptybar"></div>
+                            <div className="filledbar"></div>
+                        </div>
+                        <img src={dis.image} alt="Distination Image"></img>
+                    </div>);
 
                 })
             }
-        </>
+        </div>
     );
 
 }
